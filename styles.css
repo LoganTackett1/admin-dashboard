@@ -70,7 +70,7 @@ body {
 }
 
 .searchbar > input {
-    background-color: rgb(217, 217, 217);
+    background-color: rgb(231, 231, 231);
     height: 30px;
     border: none;
     border-radius: 15px;
@@ -157,22 +157,25 @@ img[src="icons/notification.svg"] {
 .main {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    background: rgb(217, 217, 217);
+    background: rgb(231, 231, 231);
 }
 
 .feed {
-    padding: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 60px 60px;
+    padding: 20px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 .card {
     background-color: white;
     border-radius: 20px;
-    width: 90%;
-    height: 80%;
-    padding: 10px;
+    width: 100%;
+    height: 100%;
     border-left: 4px red solid;
+    padding: 10px;
 
     display: grid;
 }
@@ -192,6 +195,79 @@ img[src="icons/notification.svg"] {
 
 .buttons {
     place-self: end end;
+}
+
+.sidefeed {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-left: -20px;
+    padding-bottom: 30px;
+}
+
+.sidefeed p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidefeed > div {
+    width: 95%;
+    height: 100%;
+    background-color: white;
+    margin: 10px 10px 10px 0px;
+    border-radius: 20px;
+}
+
+.announcements {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.announcements * {
+    color: black;
+}
+
+.announcements strong {
+    font-size: 15px;
+}
+
+.announcements p {
+    font-size: 12px;
+}
+
+.divider {
+    width: 95%;
+    height: 2px;
+    background-color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.trending img {
+    height: 50px;
+}
+
+.trending * {
+    color: black;
+}
+
+.trending > div {
+    display: flex;
+    align-items: center;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.trending p {
+    display: block;
 }
 
 
