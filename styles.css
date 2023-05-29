@@ -36,7 +36,7 @@ body {
     padding-left: 20px;
 }
 
-.group > div {
+.group > div > button {
     padding: 5px;
     font-size: 28px;
     display: flex;
@@ -58,7 +58,14 @@ body {
     padding-right: 10px;
 }
 
-.top img {
+button {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.top > button > img {
     width: 50px;
     filter: brightness(0) saturate(100%) invert(100%);
     padding-right: 10px;
@@ -162,9 +169,10 @@ img[src="icons/notification.svg"] {
 
 .feed {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-auto-rows: 30vh;
     gap: 60px 60px;
-    padding: 20px;
+    padding: 30px;
     margin-right: 40px;
     margin-bottom: 40px;
 }
