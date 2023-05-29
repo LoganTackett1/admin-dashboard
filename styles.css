@@ -19,11 +19,13 @@ body {
 .sidebar {
     grid-area: 1/1/-1/2;
     background-color: #fb7185;
+    padding-right: 10px;
 }
 
 .header {
     grid-area: 1/2/2/-1;
-    border: solid 3px red;
+    display: grid;
+    grid: 2fr 3fr/ 2fr 1fr;
 }
 
 .group {
@@ -61,3 +63,94 @@ body {
     filter: brightness(0) saturate(100%) invert(100%);
     padding-right: 10px;
 }
+
+.searchbar > img {
+    height: 20px;
+    margin: 10px;
+}
+
+.searchbar > input {
+    background-color: rgb(217, 217, 217);
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    width: 70%;
+    margin: 10px;
+    font-size: 18px;
+    padding-left: 10px;
+    color: black;
+}
+
+.searchbar {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+img[src="icons/notification.svg"] {
+    height: 20px;
+    margin-right: 20px;
+}
+
+.top-right > img[src="icons/generic_user.svg"] {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: black;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.account-header > img[src="icons/generic_user.svg"] {
+    height: 80px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.account-header > div {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.account-header p {
+    color: black;
+}
+
+.account-header {
+    display: flex;
+    color: black;
+    align-items: center;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+
+.post-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.post-buttons > div {
+    background-color: rgb(255, 40, 79);
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
